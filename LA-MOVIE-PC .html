@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+body{
+    background: black;
+}     
+.cont{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(70px, 1fr));
+    gap: 20px;
+}
+.cont img{
+    border-radius: 8px;
+    width: 100%; height: auto;
+    box-sizing: box-shadow;
+    transition: 1.5s;
+    border: 2px solid blue;
+    box-shadow: 0 0 30px blue;
+}
+.cont img:hover{
+    transform: scale(2) perspective(500px)rotateY(50deg);
+    padding-left: 5px;
+    background: orange;
+    border: 3px solid #4f9;
+    box-shadow: 0 0 30px #4f9;
+}
+.cont:hover img:not(:hover){
+    scale: .8;
+    filter: grayscale(1) blur(1px);
+}
+.ico-1{
+    display: grid;
+    border-radius: 20px;
+    background: gold;
+    padding: 5px;
+    width: 40%;  
+    gap: 6px;  
+}
+.ico-2{
+    display: grid;
+    border-radius: 20px;
+    background: red;
+    padding: 5px;
+    width: 40%;  
+    gap: 6px;  
+}
+.ico-1:hover{
+    transform: scale(1.5);
+}
+.ico-2:hover{
+    transform: scale(1.5);
+}
+#Box {
+        opacity: .5;
+    
+  &:hover {
+        scale: 1.5; 
+     }
+}
+</style>
+
+<style>
+.puff-in-hor {
+	-webkit-animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff-in-hor {
+  0% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-hor {
+  0% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+#H {
+    color: gold;
+    opacity: .9;
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+  <h2 id ="H">🍿 LA MOVIE 🍿</h2>
+
+     <div class="puff-in-hor">
+
+      <div id="On" onclick="playA()" class="cont">
+
+<a href="FREE-TV.html"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTmsSiqyNdcUDXe4LG0iHCEwj2AwzM7hDH3WQTkp2QA3YdzcTNTJUDixaVPF3_fHm_rQE_wMr5fhIeXVWo0He1Llx-n7hbZehayIjZcLsTUqClEN1DM46EM9Q9Bt6cRqKUlabmX8xpHEaYw5P9neNJT2Q8yDetjMvZN2k9fhkQfUSubjfdVqIxWKecduE/s224/image_search_1722220506854.jpg"/></a>
+
+<a href="https://lamovievive.blogspot.com/p/sfntv.html"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvjbQQPPkrsDu3lLFEOuLm793Im5hhHNVZiULdEtcq8n-3otRFPTB9KFDHi6Y1ujBLr9BbBbZHrrTPNgEUmW4qyNhEoupw43FiLZA-1RyEVIkiv2CikoLR5rHJflEiNILx3sKHmikjt53m9jqyAjf_uNJl6ONXBLZWbVNYZqvCco9LNJn9-GFDoSqwSSc/w144-h144/image_downloader_1696258729392_copy_400x400_copy_200x200_copy_100x100.jpg"/></a>
+
+<a href="https://lamovie.github.io/PRE-ESTRENOS/"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCxTfh_2qIPP1jjP7bCO8tFuWeAsWSipX9QvFhgY4v2zUPP-grT1c700orvlWdbbfZ55NgSe0i2uzHn6r47e0eJvZIEww6uGMMugrV29aWzYwXauzs2uRUZN3S3dU4enbzbzrApt4YD8uD7x9In6sQfxujkSv_q_7nVsC-ubf9Rwgdl2BWP30yBtWdK9w/w200-h113/image_downloader_1697051082565.jpg"/></a>
+
+<a href="https://lamovievive.blogspot.com/p/x-tv.html"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh75_n5qmOgHTmtA_gg46-UdZ_NTyWzwZvHnKhn2UTy8iuGinpaWNFH_WyP12Hk2NEruNCUk9K4yqrG35HGN7tPBugybOc5Y0l4WL-zdIbroLDwupOK7QSCAhh1viT0uYSn35EYlnkbs0L4Q_U62Hip-tV4anP-n92ht6lt02N9q7ylm7cQyJvJw4wCCY4/w160-h160/image_downloader_1697383819159_copy_400x400.jpg"/></a>
+
+<a href="https://lamovievive.blogspot.com/p/bassnation.html"><img class="All" src="https://da.gd/bNbRrR"/></a>
+
+<a href="MUSIC.html"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdu1Xoz7u0iubWoWhM5NDqh6zu1m20JN4ci97MQDQt9hpgSB0f-QTuVegAEUuYVc9qmFbXJWapKcGye_xl0quEOcNPww9-_72eRpbigOoqAySEQupUECzVuS8Jx4tTHUF8znFwD3RhEy20LaTKQOYBnEn0FdyvJtTCX8-9R9Krt3hE0BR8f17BDAcG/w219-h136/image_downloader_1674772890989.gif"/></a>
+
+<a href="https://expusofia.blogspot.com/2021/07/teosofia.html"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnlq_bZvaNCPyBLh22dVVK4_dX1Pg8BD5WVE8wJKydERHvGxvuRF1Qy9_ZxM4a0nUYYluHGQO6qbarrGBCBPFsci5W2jGoKLjf_KuqY6QBg2aKLPcDQrBeXn7w01Bthrj9SVPW8WuAhQqckub3WzNPWxNxnvd6GDf3TomOS_i8sLalbzfQ60Ti84O5/w163-h136/PicsArt_07-14-04.09.30_copy_100x100.png"/></a>
+
+<a href="https://lamovievive.blogspot.com/p/database.htmlE"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBKuEEfaUqGFtoZ-bHBix0uqputK3LQKpUFXomfwXhfkrKM1s__z30VSPG6UeOS-BA4796ZCLRAwmshsPMh4lSWlhvdy2_hoIBdOOOBJ37KQ7QIcXrXIQbWIMMsOwozhqaueEX7xboFqd-Q636KSIxf7YsqrOTCBvL18J8zTsFImkTcIB-cKNRz4oJl0Q/w150-h150/image_downloader_1697051003525.jpg"/></a>
+
+           </div>
+
+      </div><br/><br/><br/><br/>    
+          
+            <center>
+       <h3 id="Box">⚙️</h3>  
+            
+      <div onclick="playP()">
+      
+     <div class="ico-2"><a href="https://lamovievive.blogspot.com/?m=1">FILMS</div>
+           <br/>
+     
+              </div>   
+         
+         
+<audio id="A" src="https://cdn-cf.vidyard.com/uploads/3940821/govideo/e554dde0-90c7-11ee-8ba3-df4e4260a155.mp4"></audio>
+
+<audio id="P" src="https://cdn-cf.vidyard.com/uploads/3940821/govideo/13e83770-8f2d-11ee-bbe1-5107ab9af334.mp4"></audio>        
+             
+<script>
+function playA(){
+   var audio =
+document.getElementById('A');
+      audio.play();
+}
+
+function playP(){
+    var audio = 
+document.getElementById('P');
+      audio.play();
+}
+</script>
+
+<script>
+
+  <!-- MULTIPLES COLORES SHADOW -->
+   document.getElementById('Box').addEventListener('click', function() {
+      var elementos = document.getElementsByClassName('All');
+      for (var i = 0; i < elementos.length; i++) {
+        var colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16); // Generar un color aleatorio en formato hexadecimal
+        elementos[i].style.boxShadow = '5px 5px 5px ' + colorAleatorio;
+      }
+    });
+    
+ <!-- MULTIPLES COLORES BORDER -->
+   document.getElementById('Box').addEventListener('click', function() {
+      var elementos = document.getElementsByClassName('All');
+      for (var i = 0; i < elementos.length; i++) {
+        var colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16); // Generar un color aleatorio en formato hexadecimal
+        elementos[i].style.border = '5px solid ' + colorAleatorio;
+      }
+    });
+</script> 
+
+           <!-- DELAY -->
+        
+<script>
+  function Delay(url) {
+    setTimeout(function() {
+      window.location.href = url;
+    }, 1500);
+  }  
+         var images = document.querySelectorAll('#On a');
+
+  images.forEach(function(image) {
+    image.addEventListener('click', function(event) {
+      event.preventDefault(); // Evitar la redirección inmediata
+      var href = this.getAttribute('href'); // Obtiene el href del enlace
+      Delay(href); // Llama a la función con el href
+    });
+  });
+</script>
+</body>
+</html>   
+       
+
+
+ 
