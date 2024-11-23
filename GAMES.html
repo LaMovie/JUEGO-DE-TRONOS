@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="UFT-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>DE JOE</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+body {
+    cursor: none;
+    background: #000;
+    font-family: 'Lacquer', cursive;
+}
+#Flex {
+    display: grid;
+}
+#Div {
+    margin: 15vh 0px;
+    display: flex;
+    gap: 18vh;
+    justify-content: center;
+}
+h5 {
+    width: 100%;
+    color: blue;
+    font-size: 30px;
+    background: gold;
+    border-radius: 20px;
+  &:hover {
+     scale: 2;
+     transition: 1s;
+     color: #fff;
+     background: red;
+  }
+}
+</style>
+<style>
+body{-webkit-animation:puff-in-hor 1s cubic-bezier(.47,0,.745,.715) both;animation:puff-in-hor 1.5s cubic-bezier(.47,0,.745,.715) both}@-webkit-keyframes puff-in-hor{0%{-webkit-transform:scaleX(2);transform:scaleX(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-filter:blur(0px);filter:blur(0px);opacity:1}}@keyframes puff-in-hor{0%{-webkit-transform:scaleX(2);transform:scaleX(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-filter:blur(0px);filter:blur(0px);opacity:1}}
+</style>
+</style>
+</head>
+<body>
+<center>
+  <div id="Flex">
+   <div id="Div">
+      <a href="Flappy-Dino.html"><h5>🦖 FLAPPY DINO</h5></a>
+      <a href="D-MENTA.html"><h5>🍭 D-MENTA</h5></a>
+      <a href="3-EN-LINEA.html"><h5>💠 3 EN LINEA</h5></a>
+   </div>
+  </div>
+</center>
+
+<audio autoplay src="Audio.mp3"></audio>
+
+<script>
+  function Delay(url) {
+    setTimeout(function() {
+      window.location.href = url;
+    }, 1500);
+  }  
+         var images = document.querySelectorAll('a');
+
+  images.forEach(function(image) {
+    image.addEventListener('click', function(event) {
+      event.preventDefault(); // Evitar la redirección inmediata
+      var href = this.getAttribute('href'); // Obtiene el href del enlace
+      Delay(href); // Llama a la función con el href
+    });
+  });
+</script>
+</body>
+</html>
