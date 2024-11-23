@@ -3,7 +3,7 @@
 <head>
      <meta charset="UTF-8"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>🔴 MENÚ</title>
+   <title>🔴 MENÚ</title>
 <style>
 body{
     background: black;
@@ -36,7 +36,7 @@ body{
 .ico-1{
     display: grid;
     border-radius: 20px;
-    background: gold;
+    background: red;
     padding: 5px;
     width: 40%;  
     gap: 6px;  
@@ -44,9 +44,10 @@ body{
 .ico-2{
     display: grid;
     border-radius: 20px;
-    background: red;
+    background: gold;
     padding: 5px;
-    width: 40%;  
+    width: 20%;
+    scale: 50%;
     gap: 6px;  
 }
 .ico-1:hover{
@@ -61,6 +62,14 @@ body{
   &:hover {
         scale: 1.5; 
      }
+}
+#A {
+    color: #fff;
+    text-decoration: none;
+}
+#B {
+    color: red;
+    text-decoration: none;
 }
 </style>
 
@@ -139,7 +148,8 @@ body{
             
       <div onclick="playP()">
       
-     <div class="ico-2"><a href="https://lamovievive.blogspot.com/?m=1">FILMS</div>
+     <div class="ico-1"><a id="A" href="https://lamovievive.blogspot.com/?m=1">FILMS</div></br>
+     <div class="ico-2"><a id="B" href="Flappy-Dino.html">FLAPPY DINO</div>
            <br/>
      
               </div>   
