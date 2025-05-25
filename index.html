@@ -403,6 +403,13 @@ document.addEventListener('fullscreenchange', function() {
 });
 </script>
 <script>
+     window.onload = () => {
+       if (window.innerWidth > window.innerHeight) {
+       EE.style.height = '200px';
+   }
+ };
+</script>           
+<script>
   var TOTAL = document.querySelectorAll('#Total img');
     TOTAL.forEach(total => {
        total.src = 'https://is.gd/g9JTwV';          
