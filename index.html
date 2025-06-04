@@ -152,7 +152,7 @@ text-align: left;
 
 <hr id="Hr1"/><hr id="Hr2"/>            
         <div>
- <embed id="EE" src=""></embed></div>
+ <embed id="EE" src="https://mix.okpeliz.com/embed/1399-1-1"></embed></div>
             
          <br/>
   <div id="Total">
@@ -393,11 +393,17 @@ document.addEventListener('fullscreenchange', function() {
     <!-- Si estamos en pantalla completa, bloquear orientación horizontal -->
     if (screen.orientation && screen.orientation.lock) {
       screen.orientation.lock('landscape');
+      EE.style.border = 'black';
     }
   } else {
     <!-- Si salimos de pantalla completa, volver a orientación vertical -->
     if (screen.orientation && screen.orientation.lock) {
       screen.orientation.lock('portrait');
+      
+   EE.style.borderTop = '.5vh solid brown';
+   EE.style.borderLeft = '2vh solid brown';
+   EE.style.borderRight = '.1vh solid brown';
+   EE.style.borderBottom = '2vh solid #800000';
     }
   }
 });
@@ -408,7 +414,7 @@ document.addEventListener('fullscreenchange', function() {
        EE.style.height = '200px';
    }
  };
-</script>           
+</script>
 <script>
   var TOTAL = document.querySelectorAll('#Total img');
     TOTAL.forEach(total => {
@@ -435,4 +441,4 @@ document.addEventListener('fullscreenchange', function() {
 </body>
 </html>
 
-            
+           
